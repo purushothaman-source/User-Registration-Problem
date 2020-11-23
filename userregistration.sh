@@ -1,6 +1,6 @@
 #!/bin/bash 
 shopt -s extglob
-passPat="^[a-zA-Z0-9]{8,}$"
+passPat="^(?=.*[A-Z])[a-zA-Z0-9]{8,}$"
 read -p "enter valid password " password
 
 if [[ $password =~ $passPat ]]
@@ -9,3 +9,4 @@ then
 else
   echo "pattern not matching"
 fi
+
