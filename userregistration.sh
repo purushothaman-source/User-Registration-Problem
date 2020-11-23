@@ -1,11 +1,12 @@
 #!/bin/bash 
 shopt -s extglob
-emailPat="^[0-9a-zA-Z]+([.\-_+][0-9a-zA-Z]+)*@[a-z0-9A-Z]+.[a-z]{2,4}([.][a-zA-Z]{2})*$"
-read -p "enter valid email " email
+mobilePat="^91[ ][6-9][0-9]{9}$"
+read -p "enter valid mobilenumber " mobilenumber
 
-if [[ $email =~ $emailPat ]]
+if [[ $mobilenumber =~ $mobilePat ]]
 then
    echo "Pattern matching"
 else
   echo "pattern not matching"
 fi
+
