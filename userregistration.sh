@@ -1,9 +1,9 @@
 #!/bin/bash 
 shopt -s extglob
-firstNamePat="^[A-Z]{1}[a-z]{2,}$"
-read -p "enter firstname " firstName
+lastNamePat="^[A-Z]{1}[a-z]{2,}$"
+read -p "enter lastname " lastName
 
-if [[ $firstName =~ $firstNamePat ]]
+if [[ $lastName =~ $lastNamePat ]]
 then
    echo "Pattern matching"
 else
