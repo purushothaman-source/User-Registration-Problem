@@ -1,12 +1,11 @@
 #!/bin/bash 
 shopt -s extglob
-mobilePat="^91[ ][6-9][0-9]{9}$"
-read -p "enter valid mobilenumber " mobilenumber
+passPat="^[a-zA-Z0-9]{8,}$"
+read -p "enter valid password " password
 
-if [[ $mobilenumber =~ $mobilePat ]]
+if [[ $password =~ $passPat ]]
 then
    echo "Pattern matching"
 else
   echo "pattern not matching"
 fi
-
