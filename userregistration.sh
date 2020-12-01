@@ -88,7 +88,6 @@ password3
 function password4{
 passPat="^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(?=.*[,.<>?;:'"!@#$%*-])[a-zA-Z0-9,.?><:"';!@#$%&*\-]{8,}$"
 read -p "enter valid password " password
-
 if [[ $password =~ $passPat ]]
 then
    echo "Pattern matching"
